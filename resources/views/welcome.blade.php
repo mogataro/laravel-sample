@@ -17,6 +17,7 @@
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 margin: 0;
+                height: 100vh;
             }
 
             .wrap {
@@ -26,7 +27,7 @@
                 justify-content: space-between;
             }
             .header {
-                background: gray;
+                background: aliceblue;
                 text-align: left
             }
 
@@ -35,7 +36,7 @@
             }
 
             .footer {
-                background: gray;
+                background: aliceblue;
                 display: flex;
                 justify-content: center
             }

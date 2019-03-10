@@ -85,13 +85,15 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <div>
+                        <a href="https://mogataro-nuxt-sample-app.herokuapp.com/">Nuxt-Sample-App</a>
+                    </div>
+                    <div>
+                        <a href="https://mogataro.com/motoori/">Blog</a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/mogataro">GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>

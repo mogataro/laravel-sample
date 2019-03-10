@@ -34,12 +34,6 @@
                 position: relative;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
             .content {
                 text-align: center;
             }
@@ -48,7 +42,7 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            .a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -65,25 +59,28 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+            <header class="header links">
+                    <a href="{{ url('/') }}">Top</a>
             @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+                @auth
+                    <a href="{{ url('/home') }}">Home</a>
+                @else
+                    <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}">Register</a>
+                    @endif
+                @endauth
             @endif
+            </header>
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel-Sample
                 </div>
-
+            </div>
+            
+            <footer class="footer">
                 <div class="links">
                     <div>
                         <a href="https://mogataro-nuxt-sample-app.herokuapp.com/">Nuxt-Sample-App</a>
@@ -95,7 +92,7 @@
                         <a href="https://github.com/mogataro">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
     </body>
 </html>

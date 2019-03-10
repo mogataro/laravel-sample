@@ -80,6 +80,7 @@
                 <div class="title m-b-md">
                     Laravel-Sample
                 </div>
+                <p>~ブログ用のサンプルプロジェクト~</p>
             </div>
             
             <footer class="footer">

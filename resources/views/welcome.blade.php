@@ -16,7 +16,6 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
                 margin: 0;
             }
 
@@ -27,9 +26,19 @@
                 flex-direction: column;
                 justify-content: space-between;
             }
+            .header {
+                background: gray;
+                text-align: left
+            }
 
             .content {
                 text-align: center;
+            }
+
+            .footer {
+                background: gray;
+                display: flex;
+                justify-content: center
             }
 
             .title {
@@ -50,7 +59,7 @@
     </head>
     <body>
         <div class="wrap">
-            <header class="header links">
+            <header class="header">
                     <a href="{{ url('/') }}">Top</a>
             @if (Route::has('login'))
                 @auth
@@ -72,16 +81,14 @@
             </div>
             
             <footer class="footer">
-                <div class="links">
-                    <div>
-                        <a href="https://mogataro-nuxt-sample-app.herokuapp.com/">Nuxt-Sample-App</a>
-                    </div>
-                    <div>
-                        <a href="https://mogataro.com/motoori/">Blog</a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/mogataro">GitHub</a>
-                    </div>
+                <div>
+                    <a href="https://mogataro-nuxt-sample-app.herokuapp.com/">Nuxt-Sample-App</a>
+                </div>
+                <div>
+                    <a href="https://mogataro.com/motoori/">Blog</a>
+                </div>
+                <div>
+                    <a href="https://github.com/mogataro">GitHub</a>
                 </div>
             </footer>
         </div>

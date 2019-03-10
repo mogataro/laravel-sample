@@ -20,14 +20,12 @@
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
+            .wrap {
                 align-items: center;
+                min-height: 100%;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             .content {
@@ -51,7 +49,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="wrap">
             <header class="header links">
                     <a href="{{ url('/') }}">Top</a>
             @if (Route::has('login'))

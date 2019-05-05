@@ -13,7 +13,7 @@
 if (env('APP_ENV') == 'local') {
     return [
         'supportsCredentials' => true,
-        'allowedOrigins' => ['https://mogataro-nuxt-sample-app.herokuapp.com'],
+        'allowedOrigins' => ['http://localhost:*', 'https://mogataro-nuxt-sample-app.herokuapp.com'],
         'allowedOriginsPatterns' => [],
         'allowedHeaders' => ['*'],
         'allowedMethods' => ['*'],
